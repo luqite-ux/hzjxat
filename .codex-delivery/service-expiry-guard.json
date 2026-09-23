@@ -31,26 +31,26 @@
     "app/service-expired/page.tsx"
   ],
   "backendRegistration": {
-    "registered": false,
+    "registered": true,
     "guardVersion": "1",
-    "evidencePath": ""
+    "evidencePath": "deliverables/formal-domain-db-readback.json"
   },
   "productionVerification": {
     "normal": {
-      "result": "PENDING",
-      "evidencePath": ""
+      "result": "PASS",
+      "evidencePath": "deliverables/service-expiry-production-evidence.json"
     },
     "simulatedExpired": {
-      "result": "PENDING",
-      "evidencePath": ""
+      "result": "PASS",
+      "evidencePath": "deliverables/service-expiry-production-evidence.json"
     },
     "renewalRecovery": {
-      "result": "PENDING",
-      "evidencePath": ""
+      "result": "PASS",
+      "evidencePath": "deliverables/service-expiry-production-evidence.json"
     },
     "adminReachable": {
-      "result": "PENDING",
-      "evidencePath": ""
+      "result": "PASS",
+      "evidencePath": "deliverables/service-expiry-production-evidence.json"
     }
   }
 }

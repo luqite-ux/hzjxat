@@ -1,0 +1,50 @@
+{
+  "checkedAt": "2026-09-23T13:06:58.454Z",
+  "tenantId": "4787a180-bcff-4ca7-a2e3-e67c20719b09",
+  "checks": {
+    "publicServiceStatus": {
+      "url": "https://admin.globle-trade.com/api/public/service-status/4787a180-bcff-4ca7-a2e3-e67c20719b09",
+      "status": 200,
+      "contentType": "application/json",
+      "location": null,
+      "sample": "{\"available\":true,\"status\":\"active\",\"checkedAt\":\"2026-09-23T13:06:48.372Z\",\"version\":1}",
+      "pass": true,
+      "json": {
+        "available": true,
+        "status": "active",
+        "checkedAt": "2026-09-23T13:06:48.372Z",
+        "version": 1
+      }
+    },
+    "normal": {
+      "url": "https://jianxinautomation.com/",
+      "status": 200,
+      "pass": true
+    },
+    "simulatedExpiredPageDirect": {
+      "url": "https://jianxinautomation.com/service-expired",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "location": null,
+      "sample": "<!DOCTYPE html><html data-dpl-id=\"dpl_GDqBM4JvbLyja4DvWvDZyKZUkSYe\" lang=\"en\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes\"/><link rel=\"preload\" href=\"/_",
+      "pass": true
+    },
+    "simulatedExpired": {
+      "method": "direct expired-page production route plus source contract; real customer enforcement remains disabled",
+      "pass": true
+    },
+    "renewalRecovery": {
+      "method": "service-status readback confirms enforcement_enabled is false and public home remains 200 without redeploy",
+      "pass": true
+    },
+    "adminReachable": {
+      "url": "https://jianxinautomation.com/admin/login",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "location": null,
+      "sample": "<!DOCTYPE html><html data-dpl-id=\"dpl_GDqBM4JvbLyja4DvWvDZyKZUkSYe\" lang=\"en\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes\"/><link rel=\"stylesheet\" href=",
+      "pass": true
+    }
+  },
+  "result": "PASS"
+}
