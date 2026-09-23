@@ -1,0 +1,41 @@
+{
+  "projectId": "prj_pY4LlVIUA0IYrXYTUBL0oNjJsMKp",
+  "domains": [
+    {
+      "name": "hzjxat.com",
+      "addStatus": 200,
+      "addCode": null,
+      "inspectStatus": 200,
+      "inspect": {
+        "name": "hzjxat.com",
+        "apexName": "hzjxat.com",
+        "projectId": "prj_pY4LlVIUA0IYrXYTUBL0oNjJsMKp",
+        "redirect": null,
+        "redirectStatusCode": null,
+        "gitBranch": null,
+        "customEnvironmentId": null,
+        "updatedAt": 1790167387268,
+        "createdAt": 1790167387268,
+        "verified": true
+      }
+    },
+    {
+      "name": "www.hzjxat.com",
+      "addStatus": 200,
+      "addCode": null,
+      "inspectStatus": 200,
+      "inspect": {
+        "name": "www.hzjxat.com",
+        "apexName": "hzjxat.com",
+        "projectId": "prj_pY4LlVIUA0IYrXYTUBL0oNjJsMKp",
+        "redirect": null,
+        "redirectStatusCode": null,
+        "gitBranch": null,
+        "customEnvironmentId": null,
+        "updatedAt": 1790167390066,
+        "createdAt": 1790167390066,
+        "verified": true
+      }
+    }
+  ]
+}

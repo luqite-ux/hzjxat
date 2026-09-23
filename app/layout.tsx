@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import { Header } from '@/components/header'
 import { Footer } from '@/components/footer'
+import { siteConfig } from '@/lib/site-config'
 import './globals.css'
 
 const geist = Geist({ subsets: ['latin'], variable: '--font-geist-sans' })
@@ -15,7 +16,7 @@ export const metadata: Metadata = {
   },
   description:
     'Hangzhou Jianxin Automation Technology Co., Ltd. engineers custom automation equipment, machine vision inspection, robotics applications and assembly/testing lines for automotive, medical, electronics and industrial manufacturers.',
-  metadataBase: new URL('https://www.hzjxat.com'),
+  metadataBase: new URL(`https://${siteConfig.domain}`),
   keywords: [
     'custom automation equipment',
     'machine vision inspection',
@@ -27,7 +28,7 @@ export const metadata: Metadata = {
     title: 'Hangzhou Jianxin Automation Technology Co., Ltd.',
     description:
       'Custom automation equipment, machine vision inspection and robotics applications engineered in Hangzhou, China.',
-    url: 'https://www.hzjxat.com',
+    url: `https://${siteConfig.domain}`,
     siteName: 'Jianxin Automation',
     locale: 'en_US',
     type: 'website',

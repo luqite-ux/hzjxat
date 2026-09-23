@@ -1,0 +1,110 @@
+{
+  "capturedAt": "2026-09-23T12:49:13.296Z",
+  "zone": {
+    "id": "599a16e18dd8dc2ab67fa88725940d3f",
+    "name": "hzjxat.com",
+    "status": "pending",
+    "name_servers": [
+      "eleanor.ns.cloudflare.com",
+      "sterling.ns.cloudflare.com"
+    ],
+    "created": false
+  },
+  "publicBackup": {
+    "ns": [],
+    "mx": [
+      {
+        "exchange": "mxbiz2.qq.com",
+        "priority": 10,
+        "type": "MX"
+      },
+      {
+        "exchange": "mxbiz1.qq.com",
+        "priority": 5,
+        "type": "MX"
+      }
+    ],
+    "apexTxtCount": 0,
+    "dmarcTxtCount": 0
+  },
+  "deletedWebConflicts": [],
+  "webRecords": [
+    {
+      "type": "A",
+      "name": "hzjxat.com",
+      "content": "76.76.21.21",
+      "proxied": false
+    },
+    {
+      "type": "CNAME",
+      "name": "www.hzjxat.com",
+      "content": "cname.vercel-dns.com",
+      "proxied": false
+    }
+  ],
+  "records": [
+    {
+      "id": "bcda0070751597ae2bcaafcb15bd9e3c",
+      "name": "hzjxat.com",
+      "type": "A",
+      "content": "76.76.21.21",
+      "proxiable": true,
+      "proxied": false,
+      "ttl": 1,
+      "settings": {},
+      "meta": {},
+      "comment": null,
+      "tags": [],
+      "created_on": "2026-09-23T12:48:00.369527Z",
+      "modified_on": "2026-09-23T12:48:00.369527Z"
+    },
+    {
+      "id": "1c303d794211d1ef7f7163636c194632",
+      "name": "www.hzjxat.com",
+      "type": "CNAME",
+      "content": "cname.vercel-dns.com",
+      "proxiable": true,
+      "proxied": false,
+      "ttl": 1,
+      "settings": {
+        "flatten_cname": false
+      },
+      "meta": {},
+      "comment": null,
+      "tags": [],
+      "created_on": "2026-09-23T12:48:01.184469Z",
+      "modified_on": "2026-09-23T12:49:12.398995Z"
+    },
+    {
+      "id": "420c265de8455b5aeb3ceabf6c18801e",
+      "name": "hzjxat.com",
+      "type": "MX",
+      "content": "mxbiz1.qq.com",
+      "priority": 5,
+      "proxiable": false,
+      "proxied": false,
+      "ttl": 1,
+      "settings": {},
+      "meta": {},
+      "comment": null,
+      "tags": [],
+      "created_on": "2026-09-23T12:47:57.633615Z",
+      "modified_on": "2026-09-23T12:49:10.837079Z"
+    },
+    {
+      "id": "0e68c84bd42a2c7a1550017b4a8e0bed",
+      "name": "hzjxat.com",
+      "type": "TXT",
+      "content": "v=spf1 include:spf.mail.qq.com ~all",
+      "proxiable": false,
+      "proxied": false,
+      "ttl": 1,
+      "settings": {},
+      "meta": {},
+      "comment": null,
+      "tags": [],
+      "created_on": "2026-09-23T12:47:59.59037Z",
+      "modified_on": "2026-09-23T12:47:59.59037Z"
+    }
+  ]
+}

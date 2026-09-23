@@ -2,6 +2,7 @@ import type { Metadata } from "next"
 import { notFound } from "next/navigation"
 import { ProductDetail } from "@/components/product-detail"
 import { fetchProductBySlug, fetchProductsData, fetchRelatedProducts } from "@/lib/products-db"
+import { siteConfig } from "@/lib/site-config"
 
 export const revalidate = 60
 export const dynamicParams = true
@@ -26,6 +27,16 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
   return {
     title: product.name,
     description: product.summary,
+    alternates: {
+      canonical: `/products/${product.slug}`,
+    },
+    openGraph: {
+      title: product.name,
+      description: product.summary,
+      url: `https://${siteConfig.domain}/products/${product.slug}`,
+      images: product.image ? [{ url: product.image, alt: product.name }] : undefined,
+      type: "website",
+    },
   }
 }
 

@@ -2,7 +2,7 @@ export const siteConfig = {
   legalNameEn: "Hangzhou Jianxin Automation Technology Co., Ltd.",
   legalNameZh: "杭州剑欣自动化科技有限公司",
   shortName: "Jianxin Automation",
-  domain: "www.hzjxat.com",
+  domain: "hzjxat.com",
   email: "jian.wang@hzjxat.com",
   phone: "+86 15868820808",
   phoneHref: "tel:+8615868820808",

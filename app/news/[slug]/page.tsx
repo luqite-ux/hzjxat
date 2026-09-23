@@ -3,6 +3,7 @@ import { notFound } from "next/navigation"
 import Link from "next/link"
 import { ArrowLeft } from "lucide-react"
 import { getArticleBySlug, getPublishedArticles } from "@/lib/articles-db"
+import { siteConfig } from "@/lib/site-config"
 
 export const revalidate = 60
 export const dynamicParams = true
@@ -27,6 +28,15 @@ export async function generateMetadata({ params }: NewsArticlePageProps): Promis
   return {
     title: article.title,
     description: article.excerpt,
+    alternates: {
+      canonical: `/news/${article.slug}`,
+    },
+    openGraph: {
+      title: article.title,
+      description: article.excerpt,
+      url: `https://${siteConfig.domain}/news/${article.slug}`,
+      type: "article",
+    },
   }
 }
 
