@@ -3,7 +3,7 @@ export const siteConfig = {
   legalNameZh: "杭州剑欣自动化科技有限公司",
   shortName: "Jianxin Automation",
   domain: "jianxinautomation.com",
-  email: "jian.wang@hzjxat.com",
+  email: "info@jianxinautomation.com",
   phone: "+86 15868820808",
   phoneHref: "tel:+8615868820808",
   whatsappHref: "https://wa.me/8615868820808",
