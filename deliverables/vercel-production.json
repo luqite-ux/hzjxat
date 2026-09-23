@@ -2,10 +2,10 @@
   "projectName": "hzjxat",
   "projectId": "prj_pY4LlVIUA0IYrXYTUBL0oNjJsMKp",
   "created": false,
-  "deploymentId": "dpl_3gmYuFoEs4gX5spKECQ2eDygX7Bs",
+  "deploymentId": "dpl_3LJ8KW2uBhxP9NSNkJUBh8BnbTs4",
   "readyState": "READY",
-  "url": "https://hzjxat-r8qy0b1cg-huanqiu.vercel.app",
-  "githubSha": "ac9d56297cd80a72be4e5fcd17101f860320dd23",
+  "url": "https://hzjxat-zu1kgcmdw-huanqiu.vercel.app",
+  "githubSha": "1b2edc8cc2ab2a7f844b57879040f449c6d91d51",
   "envKeys": [
     "NEXT_PUBLIC_SUPABASE_URL",
     "NEXT_PUBLIC_SUPABASE_ANON_KEY",
