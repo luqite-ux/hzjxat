@@ -1,0 +1,81 @@
+{
+  "result": "PASS",
+  "tenantId": "4787a180-bcff-4ca7-a2e3-e67c20719b09",
+  "domain": "hzjxat.com",
+  "adminEmail": "info@hzjxat.com",
+  "productCount": 9,
+  "categoryCount": 2,
+  "logoUrl": "https://pub-c7a22068052144a5805830c30d280128.r2.dev/customers/hzjxat/brand/jx-logo.png",
+  "faviconUrl": "https://pub-c7a22068052144a5805830c30d280128.r2.dev/customers/hzjxat/brand/jx-logo.png",
+  "serviceGuard": {
+    "tenant_id": "4787a180-bcff-4ca7-a2e3-e67c20719b09",
+    "expires_on": null,
+    "enforcement_enabled": false,
+    "guard_version": "1"
+  },
+  "seoEnabled": false,
+  "uploaded": {
+    "logo": {
+      "url": "https://pub-c7a22068052144a5805830c30d280128.r2.dev/customers/hzjxat/brand/jx-logo.png",
+      "key": "customers/hzjxat/brand/jx-logo.png",
+      "bytes": 14700,
+      "source": "/images/logo/jx-logo.png"
+    },
+    "products": [
+      {
+        "source": "/images/products/oil-seal-vision-inspection-machine.jpg",
+        "url": "https://pub-c7a22068052144a5805830c30d280128.r2.dev/customers/hzjxat/products/oil-seal-vision-inspection-machine.jpg",
+        "key": "customers/hzjxat/products/oil-seal-vision-inspection-machine.jpg",
+        "bytes": 892885
+      },
+      {
+        "source": "/images/products/o-ring-vision-inspection-machine.jpg",
+        "url": "https://pub-c7a22068052144a5805830c30d280128.r2.dev/customers/hzjxat/products/o-ring-vision-inspection-machine.jpg",
+        "key": "customers/hzjxat/products/o-ring-vision-inspection-machine.jpg",
+        "bytes": 947552
+      },
+      {
+        "source": "/images/products/small-parts-tray-loading-machine.jpg",
+        "url": "https://pub-c7a22068052144a5805830c30d280128.r2.dev/customers/hzjxat/products/small-parts-tray-loading-machine.jpg",
+        "key": "customers/hzjxat/products/small-parts-tray-loading-machine.jpg",
+        "bytes": 4573718
+      },
+      {
+        "source": "/images/products/vision-counting-packaging-machine.jpg",
+        "url": "https://pub-c7a22068052144a5805830c30d280128.r2.dev/customers/hzjxat/products/vision-counting-packaging-machine.jpg",
+        "key": "customers/hzjxat/products/vision-counting-packaging-machine.jpg",
+        "bytes": 775947
+      },
+      {
+        "source": "/images/products/o-ring-assembly-machine.jpg",
+        "url": "https://pub-c7a22068052144a5805830c30d280128.r2.dev/customers/hzjxat/products/o-ring-assembly-machine.jpg",
+        "key": "customers/hzjxat/products/o-ring-assembly-machine.jpg",
+        "bytes": 1008691
+      },
+      {
+        "source": "/images/products/automotive-water-hose-assembly-testing-equipment.jpg",
+        "url": "https://pub-c7a22068052144a5805830c30d280128.r2.dev/customers/hzjxat/products/automotive-water-hose-assembly-testing-equipment.jpg",
+        "key": "customers/hzjxat/products/automotive-water-hose-assembly-testing-equipment.jpg",
+        "bytes": 847629
+      },
+      {
+        "source": "/images/products/charging-valve-assembly-testing-equipment.jpg",
+        "url": "https://pub-c7a22068052144a5805830c30d280128.r2.dev/customers/hzjxat/products/charging-valve-assembly-testing-equipment.jpg",
+        "key": "customers/hzjxat/products/charging-valve-assembly-testing-equipment.jpg",
+        "bytes": 831989
+      },
+      {
+        "source": "/images/products/automotive-camera-bracket-riveting-inspection-machine.jpg",
+        "url": "https://pub-c7a22068052144a5805830c30d280128.r2.dev/customers/hzjxat/products/automotive-camera-bracket-riveting-inspection-machine.jpg",
+        "key": "customers/hzjxat/products/automotive-camera-bracket-riveting-inspection-machine.jpg",
+        "bytes": 883954
+      },
+      {
+        "source": "/images/products/medical-filter-automatic-vision-inspection-line.jpg",
+        "url": "https://pub-c7a22068052144a5805830c30d280128.r2.dev/customers/hzjxat/products/medical-filter-automatic-vision-inspection-line.jpg",
+        "key": "customers/hzjxat/products/medical-filter-automatic-vision-inspection-line.jpg",
+        "bytes": 294188
+      }
+    ]
+  }
+}

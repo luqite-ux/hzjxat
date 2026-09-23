@@ -1,0 +1,16 @@
+{
+  "issue_id": "VIS-BANNER-COPY-SAFE-AREA",
+  "pass": true,
+  "banner_count": 3,
+  "measurement_count": 6,
+  "required_viewports": [
+    "desktop",
+    "mobile_390"
+  ],
+  "violations": [],
+  "evidence": [
+    "template-home-desktop.png",
+    "template-home-mobile-390-pass.png"
+  ],
+  "verified_at": "2026-09-23T12:20:49.103Z"
+}

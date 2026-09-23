@@ -1,0 +1,58 @@
+export const siteConfig = {
+  legalNameEn: "Hangzhou Jianxin Automation Technology Co., Ltd.",
+  legalNameZh: "杭州剑欣自动化科技有限公司",
+  shortName: "Jianxin Automation",
+  domain: "www.hzjxat.com",
+  email: "jian.wang@hzjxat.com",
+  phone: "+86 15868820808",
+  phoneHref: "tel:+8615868820808",
+  whatsappHref: "https://wa.me/8615868820808",
+  addressEn: "No.129 Yifeng Road, HEDA, Hangzhou, P.R. China",
+  addressZh: "浙江省杭州市钱塘区益丰路129号3幢",
+  city: "Hangzhou, Zhejiang, China",
+  description:
+    "Custom automation equipment, machine vision, robotics applications and assembly/testing lines engineered in Hangzhou, China.",
+  qualifications: [
+    "Import / Export Qualification",
+    "National High-Tech Enterprise",
+    "Zhejiang Technology-Oriented Enterprise",
+    "Trustworthy Business Commitment Unit",
+  ],
+  workshop: {
+    area: "About 1,000 sqm",
+    layout: "One integrated workshop",
+    capacity: "About 150 units per year",
+    equipment: [
+      "Machining centers",
+      "CNC lathe",
+      "Wire cutting (WEDM)",
+      "EDM",
+      "Manual lathe",
+      "Milling machines",
+      "Grinder",
+      "Sawing machine",
+    ],
+  },
+  industries: [
+    "Automotive",
+    "Medical devices",
+    "Electronics",
+    "New energy",
+    "Hardware",
+    "Adhesive",
+    "Rubber",
+    "Machining",
+    "Water meter",
+    "Household appliance",
+  ],
+} as const
+
+export const navigation = [
+  { label: "Home", href: "/" },
+  { label: "Products", href: "/products" },
+  { label: "Applications", href: "/applications" },
+  { label: "Capabilities", href: "/capabilities" },
+  { label: "About", href: "/about" },
+  { label: "Insights", href: "/news" },
+  { label: "Contact", href: "/contact" },
+] as const

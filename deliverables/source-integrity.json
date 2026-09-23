@@ -1,0 +1,28 @@
+{
+  "result": "PASS",
+  "archive": "D:\\Cursor\\Grand\\huanqiu-admin\\.codex-delivery\\jianxin\\source\\jianxin-automation-v0-source.zip",
+  "archive_bytes": 15417009,
+  "extracted_root": "D:/Cursor/Grand/hzjxat",
+  "required_routes": [
+    "/",
+    "/products",
+    "/products/oil-seal-vision-inspection-machine",
+    "/products/o-ring-vision-inspection-machine",
+    "/products/small-parts-tray-loading-machine",
+    "/products/vision-counting-packaging-machine",
+    "/products/o-ring-assembly-machine",
+    "/products/automotive-water-hose-assembly-testing-equipment",
+    "/products/charging-valve-assembly-testing-equipment",
+    "/products/automotive-camera-bracket-riveting-inspection-machine",
+    "/products/medical-filter-automatic-vision-inspection-line",
+    "/applications",
+    "/capabilities",
+    "/about",
+    "/news",
+    "/contact"
+  ],
+  "app_routes_present": true,
+  "package_json_present": true,
+  "build_result": "PASS",
+  "verified_at": "2026-09-23T12:20:49.103Z"
+}

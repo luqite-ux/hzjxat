@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "guardVersion": "1",
+  "publicStatusPath": "/api/public/service-status/",
+  "defaults": {
+    "serviceExpiryDate": null,
+    "enforcementEnabled": false
+  },
+  "failOpenScenarios": [
+    "query_failed",
+    "timeout",
+    "missing_expiry",
+    "enforcement_disabled",
+    "guard_version_unregistered"
+  ],
+  "excludedPaths": [
+    "/admin",
+    "/admin/login",
+    "/api",
+    "/_next",
+    "/favicon.ico",
+    "static-assets"
+  ],
+  "guardFiles": [
+    "lib/service-status.ts"
+  ],
+  "integrationFiles": [
+    "lib/service-guard-middleware.ts"
+  ],
+  "expiredPageFiles": [
+    "app/service-expired/page.tsx"
+  ],
+  "backendRegistration": {
+    "registered": false,
+    "guardVersion": "1",
+    "evidencePath": ""
+  },
+  "productionVerification": {
+    "normal": {
+      "result": "PENDING",
+      "evidencePath": ""
+    },
+    "simulatedExpired": {
+      "result": "PENDING",
+      "evidencePath": ""
+    },
+    "renewalRecovery": {
+      "result": "PENDING",
+      "evidencePath": ""
+    },
+    "adminReachable": {
+      "result": "PENDING",
+      "evidencePath": ""
+    }
+  }
+}
