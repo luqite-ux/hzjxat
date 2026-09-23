@@ -4,6 +4,7 @@ import { CheckCircle2 } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { SectionReveal } from "@/components/section-reveal"
 import type { Product } from "@/lib/data/products"
+import { resolveDisplayImage } from "@/lib/media"
 
 interface ProductDetailProps {
   product: Product
@@ -32,15 +33,16 @@ export function ProductDetail({ product, relatedProducts = [] }: ProductDetailPr
               </Button>
             </div>
           </div>
-          <div className="relative aspect-[4/3] w-full overflow-hidden rounded-sm bg-muted">
+          <div className="relative aspect-[4/3] w-full overflow-hidden rounded-sm border border-border bg-[linear-gradient(135deg,#f8f7f2_0%,#ece9df_100%)] shadow-sm">
             <Image
-              src={product.image || "/placeholder.svg"}
+              src={resolveDisplayImage(product.image)}
               alt={`${product.name} industrial automation equipment`}
               fill
               sizes="(min-width: 1024px) 50vw, 100vw"
               priority
               className="object-cover"
             />
+            <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/10 via-transparent to-white/10" />
           </div>
         </div>
       </div>
@@ -124,7 +126,7 @@ export function ProductDetail({ product, relatedProducts = [] }: ProductDetailPr
                     >
                       <div className="relative h-14 w-14 shrink-0 overflow-hidden rounded-sm bg-muted">
                         <Image
-                          src={item.image || "/placeholder.svg"}
+                          src={resolveDisplayImage(item.image)}
                           alt={item.name}
                           fill
                           sizes="56px"

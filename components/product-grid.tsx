@@ -3,6 +3,7 @@ import Link from "next/link"
 import { ArrowUpRight } from "lucide-react"
 import type { Product } from "@/lib/data/products"
 import { StaggerGroup } from "@/components/section-reveal"
+import { resolveDisplayImage } from "@/lib/media"
 
 interface ProductGridProps {
   productList: Product[]
@@ -27,16 +28,17 @@ export function ProductGrid({ productList }: ProductGridProps) {
         <Link
           key={product.slug}
           href={`/products/${product.slug}`}
-          className="group flex h-full flex-col overflow-hidden rounded-sm border border-border bg-card transition-shadow hover:shadow-md focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring"
+          className="group flex h-full flex-col overflow-hidden rounded-sm border border-border bg-card transition-all hover:-translate-y-0.5 hover:shadow-md focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring"
         >
-          <div className="relative aspect-[4/3] w-full overflow-hidden bg-muted">
+          <div className="relative aspect-[4/3] w-full overflow-hidden bg-[linear-gradient(135deg,#f8f7f2_0%,#ece9df_100%)]">
             <Image
-              src={product.image || "/placeholder.svg"}
+              src={resolveDisplayImage(product.image)}
               alt={`${product.name} industrial automation equipment`}
               fill
               sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
-              className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+              className="object-cover transition-transform duration-500 group-hover:scale-[1.025]"
             />
+            <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/10 via-transparent to-white/10" />
             <span className="absolute left-3 top-3 rounded-sm bg-background/90 px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wide text-primary">
               {product.category === "Custom Automation Equipment" ? "Custom" : "Standard"}
             </span>
