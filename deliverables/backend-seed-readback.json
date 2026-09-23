@@ -1,8 +1,8 @@
 {
   "result": "PASS",
   "tenantId": "4787a180-bcff-4ca7-a2e3-e67c20719b09",
-  "domain": "hzjxat.com",
-  "adminEmail": "info@hzjxat.com",
+  "domain": "jianxinautomation.com",
+  "adminEmail": "info@jianxinautomation.com",
   "productCount": 9,
   "categoryCount": 2,
   "logoUrl": "https://pub-c7a22068052144a5805830c30d280128.r2.dev/customers/hzjxat/brand/jx-logo.png",
@@ -77,5 +77,6 @@
         "bytes": 294188
       }
     ]
-  }
+  },
+  "formalDomainUpdatedBy": "formal-domain-db-readback.json"
 }

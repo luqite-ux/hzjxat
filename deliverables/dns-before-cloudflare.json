@@ -1,31 +1,34 @@
 {
-  "capturedAt": "2026-09-23T12:48:22.020Z",
+  "capturedAt": "2026-09-23T12:57:22.652Z",
   "apex": {
     "NS": [],
     "A": [],
     "AAAA": [],
     "MX": [
       {
-        "exchange": "mxbiz2.qq.com",
-        "priority": 10,
+        "exchange": "mx1.forwardemail.net",
+        "priority": 0,
         "type": "MX"
       },
       {
-        "exchange": "mxbiz1.qq.com",
-        "priority": 5,
+        "exchange": "mx2.forwardemail.net",
+        "priority": 0,
         "type": "MX"
       }
     ],
-    "TXT": [],
+    "TXT": [
+      [
+        "v=spf1 include:spf.forwardemail.net ~all"
+      ],
+      [
+        "forward-email-site-verification=7EvrT37G23"
+      ]
+    ],
     "CAA": []
   },
   "www": {
-    "CNAME": [
-      "www-hzjxat-com.lo0.faipod.com"
-    ],
-    "A": [
-      "42.240.134.159"
-    ],
+    "CNAME": [],
+    "A": [],
     "AAAA": []
   },
   "dmarc": {

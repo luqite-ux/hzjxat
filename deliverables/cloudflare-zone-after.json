@@ -1,9 +1,9 @@
 {
-  "capturedAt": "2026-09-23T12:49:13.296Z",
+  "capturedAt": "2026-09-23T12:58:03.560Z",
   "zone": {
-    "id": "599a16e18dd8dc2ab67fa88725940d3f",
-    "name": "hzjxat.com",
-    "status": "pending",
+    "id": "80d5f243d37eaf999ecfcc8f4b0ab852",
+    "name": "jianxinautomation.com",
+    "status": "active",
     "name_servers": [
       "eleanor.ns.cloudflare.com",
       "sterling.ns.cloudflare.com"
@@ -14,38 +14,38 @@
     "ns": [],
     "mx": [
       {
-        "exchange": "mxbiz2.qq.com",
-        "priority": 10,
+        "exchange": "mx1.forwardemail.net",
+        "priority": 0,
         "type": "MX"
       },
       {
-        "exchange": "mxbiz1.qq.com",
-        "priority": 5,
+        "exchange": "mx2.forwardemail.net",
+        "priority": 0,
         "type": "MX"
       }
     ],
-    "apexTxtCount": 0,
+    "apexTxtCount": 2,
     "dmarcTxtCount": 0
   },
   "deletedWebConflicts": [],
   "webRecords": [
     {
       "type": "A",
-      "name": "hzjxat.com",
+      "name": "jianxinautomation.com",
       "content": "76.76.21.21",
       "proxied": false
     },
     {
       "type": "CNAME",
-      "name": "www.hzjxat.com",
+      "name": "www.jianxinautomation.com",
       "content": "cname.vercel-dns.com",
       "proxied": false
     }
   ],
   "records": [
     {
-      "id": "bcda0070751597ae2bcaafcb15bd9e3c",
-      "name": "hzjxat.com",
+      "id": "3b9b8935c12d4b6468a614d7198b8467",
+      "name": "jianxinautomation.com",
       "type": "A",
       "content": "76.76.21.21",
       "proxiable": true,
@@ -55,12 +55,63 @@
       "meta": {},
       "comment": null,
       "tags": [],
-      "created_on": "2026-09-23T12:48:00.369527Z",
-      "modified_on": "2026-09-23T12:48:00.369527Z"
+      "created_on": "2026-09-23T12:58:01.580737Z",
+      "modified_on": "2026-09-23T12:58:01.580737Z"
     },
     {
-      "id": "1c303d794211d1ef7f7163636c194632",
-      "name": "www.hzjxat.com",
+      "id": "faee7858ee6512aa77767f4414b7c504",
+      "name": "autoconfig.jianxinautomation.com",
+      "type": "CNAME",
+      "content": "autoconfig.forwardemail.net",
+      "proxiable": true,
+      "proxied": false,
+      "ttl": 3600,
+      "settings": {
+        "flatten_cname": false
+      },
+      "meta": {},
+      "comment": null,
+      "tags": [],
+      "created_on": "2026-09-23T12:48:40.366772Z",
+      "modified_on": "2026-09-23T12:48:40.366772Z"
+    },
+    {
+      "id": "964bca4471b5ac72b0d74c7b73c20c73",
+      "name": "autodiscover.jianxinautomation.com",
+      "type": "CNAME",
+      "content": "autodiscover.forwardemail.net",
+      "proxiable": true,
+      "proxied": false,
+      "ttl": 3600,
+      "settings": {
+        "flatten_cname": false
+      },
+      "meta": {},
+      "comment": null,
+      "tags": [],
+      "created_on": "2026-09-23T12:48:40.370701Z",
+      "modified_on": "2026-09-23T12:48:40.370701Z"
+    },
+    {
+      "id": "a3a8286b748ecd5416575d40e83d3aeb",
+      "name": "fe-bounces.jianxinautomation.com",
+      "type": "CNAME",
+      "content": "forwardemail.net",
+      "proxiable": true,
+      "proxied": false,
+      "ttl": 3600,
+      "settings": {
+        "flatten_cname": false
+      },
+      "meta": {},
+      "comment": null,
+      "tags": [],
+      "created_on": "2026-09-23T12:48:40.370925Z",
+      "modified_on": "2026-09-23T12:48:40.370925Z"
+    },
+    {
+      "id": "f6bac4e2725896d12146bd8e8c3de093",
+      "name": "www.jianxinautomation.com",
       "type": "CNAME",
       "content": "cname.vercel-dns.com",
       "proxiable": true,
@@ -72,15 +123,15 @@
       "meta": {},
       "comment": null,
       "tags": [],
-      "created_on": "2026-09-23T12:48:01.184469Z",
-      "modified_on": "2026-09-23T12:49:12.398995Z"
+      "created_on": "2026-09-23T12:58:02.450228Z",
+      "modified_on": "2026-09-23T12:58:02.450228Z"
     },
     {
-      "id": "420c265de8455b5aeb3ceabf6c18801e",
-      "name": "hzjxat.com",
+      "id": "9d35447d526c8a874caadf05fba7b544",
+      "name": "jianxinautomation.com",
       "type": "MX",
-      "content": "mxbiz1.qq.com",
-      "priority": 5,
+      "content": "mx1.forwardemail.net",
+      "priority": 0,
       "proxiable": false,
       "proxied": false,
       "ttl": 1,
@@ -88,14 +139,60 @@
       "meta": {},
       "comment": null,
       "tags": [],
-      "created_on": "2026-09-23T12:47:57.633615Z",
-      "modified_on": "2026-09-23T12:49:10.837079Z"
+      "created_on": "2026-09-23T12:48:40.369005Z",
+      "modified_on": "2026-09-23T12:57:01.402192Z"
     },
     {
-      "id": "0e68c84bd42a2c7a1550017b4a8e0bed",
-      "name": "hzjxat.com",
+      "id": "d92301cb46071d548489becd208bdcc2",
+      "name": "jianxinautomation.com",
+      "type": "MX",
+      "content": "mx2.forwardemail.net",
+      "priority": 0,
+      "proxiable": false,
+      "proxied": false,
+      "ttl": 3600,
+      "settings": {},
+      "meta": {},
+      "comment": null,
+      "tags": [],
+      "created_on": "2026-09-23T12:48:40.364384Z",
+      "modified_on": "2026-09-23T12:48:40.364384Z"
+    },
+    {
+      "id": "50d5dd1b6bbd3f659cc15c4360f53256",
+      "name": "_dmarc.jianxinautomation.com",
       "type": "TXT",
-      "content": "v=spf1 include:spf.mail.qq.com ~all",
+      "content": "\"v=DMARC1; p=reject; pct=100; rua=mailto:dmarc-6ab3c7fd4569c3ceb670d7a6@forwardemail.net;\"",
+      "proxiable": false,
+      "proxied": false,
+      "ttl": 3600,
+      "settings": {},
+      "meta": {},
+      "comment": null,
+      "tags": [],
+      "created_on": "2026-09-23T12:48:40.376833Z",
+      "modified_on": "2026-09-23T12:48:40.376833Z"
+    },
+    {
+      "id": "9cb570a84bd81a0495e9905c2d10042f",
+      "name": "fe-d5b348c293._domainkey.jianxinautomation.com",
+      "type": "TXT",
+      "content": "\"v=DKIM1; k=rsa; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDadkTSacrsFlZywQ6+Mdi1YuKOVhKFr7sxMcQX4/ziFfwbT37B3goh7uu85qa+ouvTd+4eHUxBm2TCZN0sfC3pbn3tXjduDbXPppmm0SvE0EURv+U1jmGbkm4c5FEVmX+juIqZz3sGMDxc1s0jhgRmgOGXbOERZrkE24Y8Z3V+DwIDAQAB;\"",
+      "proxiable": false,
+      "proxied": false,
+      "ttl": 3600,
+      "settings": {},
+      "meta": {},
+      "comment": null,
+      "tags": [],
+      "created_on": "2026-09-23T12:48:40.375648Z",
+      "modified_on": "2026-09-23T12:48:40.375648Z"
+    },
+    {
+      "id": "af6d64fb45df5b9a56f8376e250eea35",
+      "name": "jianxinautomation.com",
+      "type": "TXT",
+      "content": "forward-email-site-verification=7EvrT37G23",
       "proxiable": false,
       "proxied": false,
       "ttl": 1,
@@ -103,8 +200,23 @@
       "meta": {},
       "comment": null,
       "tags": [],
-      "created_on": "2026-09-23T12:47:59.59037Z",
-      "modified_on": "2026-09-23T12:47:59.59037Z"
+      "created_on": "2026-09-23T12:48:40.380198Z",
+      "modified_on": "2026-09-23T12:58:00.237214Z"
+    },
+    {
+      "id": "d8e4d8f697b6d4db585d05cbbd2c6349",
+      "name": "jianxinautomation.com",
+      "type": "TXT",
+      "content": "\"forward-email-site-verification=7EvrT37G23\"",
+      "proxiable": false,
+      "proxied": false,
+      "ttl": 3600,
+      "settings": {},
+      "meta": {},
+      "comment": null,
+      "tags": [],
+      "created_on": "2026-09-23T12:48:40.373764Z",
+      "modified_on": "2026-09-23T12:48:40.373764Z"
     }
   ]
 }

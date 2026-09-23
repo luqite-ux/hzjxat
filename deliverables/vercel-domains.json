@@ -2,38 +2,38 @@
   "projectId": "prj_pY4LlVIUA0IYrXYTUBL0oNjJsMKp",
   "domains": [
     {
-      "name": "hzjxat.com",
+      "name": "jianxinautomation.com",
       "addStatus": 200,
       "addCode": null,
       "inspectStatus": 200,
       "inspect": {
-        "name": "hzjxat.com",
-        "apexName": "hzjxat.com",
+        "name": "jianxinautomation.com",
+        "apexName": "jianxinautomation.com",
         "projectId": "prj_pY4LlVIUA0IYrXYTUBL0oNjJsMKp",
         "redirect": null,
         "redirectStatusCode": null,
         "gitBranch": null,
         "customEnvironmentId": null,
-        "updatedAt": 1790167387268,
-        "createdAt": 1790167387268,
+        "updatedAt": 1790168178275,
+        "createdAt": 1790168178275,
         "verified": true
       }
     },
     {
-      "name": "www.hzjxat.com",
+      "name": "www.jianxinautomation.com",
       "addStatus": 200,
       "addCode": null,
       "inspectStatus": 200,
       "inspect": {
-        "name": "www.hzjxat.com",
-        "apexName": "hzjxat.com",
+        "name": "www.jianxinautomation.com",
+        "apexName": "jianxinautomation.com",
         "projectId": "prj_pY4LlVIUA0IYrXYTUBL0oNjJsMKp",
         "redirect": null,
         "redirectStatusCode": null,
         "gitBranch": null,
         "customEnvironmentId": null,
-        "updatedAt": 1790167390066,
-        "createdAt": 1790167390066,
+        "updatedAt": 1790168181683,
+        "createdAt": 1790168181683,
         "verified": true
       }
     }

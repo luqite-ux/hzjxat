@@ -1,0 +1,51 @@
+{
+  "result": "PASS",
+  "tenant": {
+    "id": "4787a180-bcff-4ca7-a2e3-e67c20719b09",
+    "domain": "jianxinautomation.com",
+    "email": "info@jianxinautomation.com",
+    "display_name": "杭州剑欣自动化科技有限公司",
+    "admin_group": 2,
+    "extra_settings": {
+      "legal_name_zh": "杭州剑欣自动化科技有限公司",
+      "service_expiry": {
+        "expires_on": null,
+        "guard_version": "1",
+        "enforcement_enabled": false
+      },
+      "translation_profile": {
+        "glossary": {
+          "剑欣": "Jianxin",
+          "机器视觉": "machine vision",
+          "装配检测": "assembly and testing",
+          "非标自动化": "non-standard automation"
+        },
+        "industry": "Custom automation equipment, machine vision, robotics and assembly/testing lines",
+        "target_markets": [
+          "Overseas B2B industrial buyers"
+        ],
+        "company_summary": "Hangzhou Jianxin Automation Technology Co., Ltd. designs and builds non-standard automation equipment and standard inspection/assembly systems."
+      },
+      "formal_domain_source": "user supplied in Codex thread on 2026-09-23",
+      "legal_name_en_status": "customer_supplied",
+      "site_settings_source": "customer workbook, company profile PPT and product folders",
+      "site_settings_manual_fields": [],
+      "site_settings_initialized_at": "2026-09-23T12:55:44.893Z"
+    }
+  },
+  "adminNew": {
+    "email": "info@jianxinautomation.com",
+    "tenant_id": "4787a180-bcff-4ca7-a2e3-e67c20719b09",
+    "admin_group": 2,
+    "must_change_password": false,
+    "is_active": true
+  },
+  "previousAdminEmailReadback": null,
+  "serviceGuard": {
+    "tenant_id": "4787a180-bcff-4ca7-a2e3-e67c20719b09",
+    "expires_on": null,
+    "enforcement_enabled": false,
+    "guard_version": "1"
+  },
+  "seoEnabled": false
+}
