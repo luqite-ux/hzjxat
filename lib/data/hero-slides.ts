@@ -42,6 +42,6 @@ export const heroSlides: HeroSlide[] = [
       "Our engineering team carries every project from requirement analysis through on-site commissioning, so equipment performs as specified from day one.",
     ctaLabel: "Explore Capabilities",
     ctaHref: "/capabilities",
-    safeSide: "right",
+    safeSide: "left",
   },
 ]
