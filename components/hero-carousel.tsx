@@ -99,10 +99,10 @@ export function HeroCarousel() {
             {/* Scrim confined to the real negative-space side of the photo */}
             <div
               className={cn(
-                "absolute inset-y-0 w-full sm:w-[62%]",
+                "absolute inset-y-0 w-full sm:w-[58%]",
                 item.safeSide === "left"
                   ? "left-0 bg-gradient-to-r from-background/80 via-background/40 to-transparent"
-                  : "right-0 bg-gradient-to-l from-background/80 via-background/40 to-transparent",
+                  : "right-0 bg-gradient-to-l from-background/92 via-background/62 to-transparent",
               )}
             />
           </div>
@@ -115,8 +115,10 @@ export function HeroCarousel() {
               key={item.image}
               aria-hidden={index !== activeIndex}
               className={cn(
-                "absolute inset-x-4 top-1/2 w-auto max-w-[calc(100%-2rem)] -translate-y-1/2 transition-all duration-700 ease-out sm:inset-x-6 sm:max-w-xl lg:inset-x-8",
-                item.safeSide === "left" ? "text-left" : "text-left sm:left-auto sm:right-6 lg:right-8",
+                "absolute inset-x-4 top-1/2 w-auto max-w-[calc(100%-2rem)] -translate-y-1/2 transition-all duration-700 ease-out",
+                item.safeSide === "left"
+                  ? "text-left sm:left-6 sm:right-auto sm:max-w-xl lg:left-8"
+                  : "text-left sm:left-auto sm:right-10 sm:max-w-lg lg:right-[7%] lg:max-w-xl",
                 index === activeIndex
                   ? "opacity-100 translate-x-0"
                   : cn("opacity-0 pointer-events-none", item.safeSide === "left" ? "-translate-x-4" : "translate-x-4"),
@@ -128,7 +130,7 @@ export function HeroCarousel() {
               <h1 className="mt-4 max-w-[18rem] text-[1.65rem] font-bold leading-[1.12] text-foreground sm:max-w-none sm:text-4xl lg:text-5xl">
                 {item.title}
               </h1>
-              <p className="mt-4 max-w-[18rem] text-sm leading-relaxed text-foreground/80 sm:max-w-md sm:text-lg">
+              <p className="mt-4 max-w-[18rem] text-sm leading-relaxed text-foreground/80 sm:max-w-sm sm:text-lg lg:max-w-md">
                 {item.description}
               </p>
               <div className="mt-7 flex w-full max-w-[18rem] flex-col gap-3 sm:max-w-none sm:flex-row sm:flex-wrap">
