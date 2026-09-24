@@ -102,8 +102,8 @@ export function HeroCarousel() {
                 "absolute inset-y-0 w-full sm:w-[58%]",
                 index < 2
                   ? item.safeSide === "left"
-                    ? "left-0 bg-background/78 sm:bg-transparent sm:bg-gradient-to-r sm:from-background/80 sm:via-background/40 sm:to-transparent"
-                    : "right-0 bg-background/78 sm:bg-transparent sm:bg-gradient-to-l sm:from-background/92 sm:via-background/62 sm:to-transparent"
+                    ? "left-0 bg-gradient-to-b from-background/95 via-background/82 to-background/35 sm:bg-gradient-to-r sm:from-background/80 sm:via-background/40 sm:to-transparent"
+                    : "right-0 bg-gradient-to-b from-background/95 via-background/82 to-background/35 sm:bg-gradient-to-l sm:from-background/92 sm:via-background/62 sm:to-transparent"
                   : item.safeSide === "left"
                     ? "left-0 bg-gradient-to-r from-background/80 via-background/40 to-transparent"
                     : "right-0 bg-gradient-to-l from-background/92 via-background/62 to-transparent",
