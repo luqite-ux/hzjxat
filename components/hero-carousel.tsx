@@ -109,14 +109,15 @@ export function HeroCarousel() {
         ))}
 
         {/* Copy layer: render only the active slide to avoid ghost text during image crossfades. */}
-        <div className="relative z-10 mx-auto flex h-full max-w-7xl items-center px-4 sm:px-6 lg:px-8">
+        <div className="relative z-10 mx-auto flex h-full w-full max-w-7xl items-center px-4 sm:px-6 lg:px-8">
           <div
             key={slide.image}
             className={cn(
-              "absolute inset-x-4 top-1/2 w-auto max-w-[calc(100%-2rem)] -translate-y-1/2",
-              slide.safeSide === "left"
-                ? "text-left sm:left-6 sm:right-auto sm:max-w-xl lg:left-8"
-                : "text-left sm:left-auto sm:right-10 sm:max-w-lg lg:right-[7%] lg:max-w-xl",
+              activeIndex === 2
+                ? "absolute inset-x-4 top-1/2 w-auto max-w-[calc(100%-2rem)] -translate-y-1/2 text-left sm:left-6 sm:right-auto sm:max-w-xl lg:left-8"
+                : "relative z-10 w-full max-w-[18rem] sm:max-w-lg lg:max-w-xl",
+              activeIndex !== 2 &&
+                (slide.safeSide === "left" ? "mr-auto text-left" : "ml-auto text-left"),
             )}
           >
             <span className="inline-flex items-center rounded-sm bg-primary/10 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-primary">
