@@ -108,41 +108,35 @@ export function HeroCarousel() {
           </div>
         ))}
 
-        {/* Copy layer: stays in DOM per slide, only current slide's text is interactive */}
+        {/* Copy layer: render only the active slide to avoid ghost text during image crossfades. */}
         <div className="relative z-10 mx-auto flex h-full max-w-7xl items-center px-4 sm:px-6 lg:px-8">
-          {heroSlides.map((item, index) => (
-            <div
-              key={item.image}
-              aria-hidden={index !== activeIndex}
-              className={cn(
-                "absolute inset-x-4 top-1/2 w-auto max-w-[calc(100%-2rem)] -translate-y-1/2 transition-all duration-700 ease-out",
-                item.safeSide === "left"
-                  ? "text-left sm:left-6 sm:right-auto sm:max-w-xl lg:left-8"
-                  : "text-left sm:left-auto sm:right-10 sm:max-w-lg lg:right-[7%] lg:max-w-xl",
-                index === activeIndex
-                  ? "opacity-100 translate-x-0"
-                  : cn("opacity-0 pointer-events-none", item.safeSide === "left" ? "-translate-x-4" : "translate-x-4"),
-              )}
-            >
-              <span className="inline-flex items-center rounded-sm bg-primary/10 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-primary">
-                {item.eyebrow}
-              </span>
-              <h1 className="mt-4 max-w-[18rem] text-[1.65rem] font-bold leading-[1.12] text-foreground sm:max-w-none sm:text-4xl lg:text-5xl">
-                {item.title}
-              </h1>
-              <p className="mt-4 max-w-[18rem] text-sm leading-relaxed text-foreground/80 sm:max-w-sm sm:text-lg lg:max-w-md">
-                {item.description}
-              </p>
-              <div className="mt-7 flex w-full max-w-[18rem] flex-col gap-3 sm:max-w-none sm:flex-row sm:flex-wrap">
-                <Button asChild size="lg" className="w-full rounded-sm sm:w-auto">
-                  <Link href={item.ctaHref}>{item.ctaLabel}</Link>
-                </Button>
-                <Button asChild size="lg" variant="outline" className="w-full rounded-sm bg-background/60 sm:w-auto">
-                  <Link href="/contact">Talk to Engineering</Link>
-                </Button>
-              </div>
+          <div
+            key={slide.image}
+            className={cn(
+              "absolute inset-x-4 top-1/2 w-auto max-w-[calc(100%-2rem)] -translate-y-1/2",
+              slide.safeSide === "left"
+                ? "text-left sm:left-6 sm:right-auto sm:max-w-xl lg:left-8"
+                : "text-left sm:left-auto sm:right-10 sm:max-w-lg lg:right-[7%] lg:max-w-xl",
+            )}
+          >
+            <span className="inline-flex items-center rounded-sm bg-primary/10 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-primary">
+              {slide.eyebrow}
+            </span>
+            <h1 className="mt-4 max-w-[18rem] text-[1.65rem] font-bold leading-[1.12] text-foreground sm:max-w-none sm:text-4xl lg:text-5xl">
+              {slide.title}
+            </h1>
+            <p className="mt-4 max-w-[18rem] text-sm leading-relaxed text-foreground/80 sm:max-w-sm sm:text-lg lg:max-w-md">
+              {slide.description}
+            </p>
+            <div className="mt-7 flex w-full max-w-[18rem] flex-col gap-3 sm:max-w-none sm:flex-row sm:flex-wrap">
+              <Button asChild size="lg" className="w-full rounded-sm sm:w-auto">
+                <Link href={slide.ctaHref}>{slide.ctaLabel}</Link>
+              </Button>
+              <Button asChild size="lg" variant="outline" className="w-full rounded-sm bg-background/60 sm:w-auto">
+                <Link href="/contact">Talk to Engineering</Link>
+              </Button>
             </div>
-          ))}
+          </div>
         </div>
       </div>
 

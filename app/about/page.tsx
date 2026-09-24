@@ -40,10 +40,9 @@ export default function AboutPage() {
           <SectionReveal>
             <h2 className="text-2xl font-bold text-foreground">Who we are</h2>
             <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
-              {siteConfig.legalNameEn} ({siteConfig.legalNameZh}) designs and builds automation equipment for
-              manufacturers who need reliable, repeatable process control. Our work spans non-standard automation
-              systems, machine vision inspection, robot applications, control software and standard automation
-              equipment.
+              {siteConfig.legalNameEn} designs and builds automation equipment for manufacturers who need reliable,
+              repeatable process control. Our work spans non-standard automation systems, machine vision inspection,
+              robot applications, control software and standard automation equipment.
             </p>
             <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
               We serve manufacturers across automotive, medical device, electronics, new energy, hardware, adhesive,
@@ -54,7 +53,6 @@ export default function AboutPage() {
               <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-primary" aria-hidden="true" />
               <div className="text-sm text-muted-foreground">
                 <p className="font-medium text-foreground">{siteConfig.addressEn}</p>
-                <p className="mt-0.5">{siteConfig.addressZh}</p>
               </div>
             </div>
           </SectionReveal>
