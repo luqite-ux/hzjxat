@@ -78,7 +78,12 @@ export function HeroCarousel() {
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
     >
-      <div className="relative h-[560px] w-full sm:h-[620px] lg:h-[680px]">
+      <div
+        className={cn(
+          "relative w-full sm:h-[620px] lg:h-[680px]",
+          activeIndex === 2 ? "h-[560px]" : "h-[680px]",
+        )}
+      >
         {heroSlides.map((item, index) => (
           <div
             key={item.image}
@@ -88,20 +93,24 @@ export function HeroCarousel() {
               index === activeIndex ? "opacity-100" : "opacity-0",
             )}
           >
+            {index < 2 && (
+              <Image
+                src={index === 0 ? "/images/hero/hero-1-mobile.jpg" : "/images/hero/hero-2-mobile.jpg"}
+                alt=""
+                aria-hidden="true"
+                fill
+                priority={index === 0}
+                sizes="(max-width: 639px) 100vw, 0px"
+                className="object-cover sm:hidden"
+              />
+            )}
             <Image
               src={item.image || "/placeholder.svg"}
               alt={item.alt}
               fill
               priority={index === 0}
               sizes="100vw"
-              className={cn(
-                "object-cover",
-                index === 0
-                  ? "object-[68%_center] sm:object-center"
-                  : index === 1
-                    ? "object-[30%_center] sm:object-center"
-                    : undefined,
-              )}
+              className={index < 2 ? "hidden object-cover sm:block" : "object-cover"}
             />
             {/* Scrim confined to the real negative-space side of the photo */}
             <div
@@ -126,7 +135,7 @@ export function HeroCarousel() {
             className={cn(
               activeIndex === 2
                 ? "absolute inset-x-4 top-1/2 w-auto max-w-[calc(100%-2rem)] -translate-y-1/2 text-left sm:left-6 sm:right-auto sm:max-w-xl lg:left-8"
-                : "relative z-10 w-full max-w-[18rem] sm:max-w-lg lg:max-w-xl",
+                : "relative z-10 w-full max-w-[18rem] self-start mt-16 sm:max-w-lg sm:self-auto sm:mt-0 lg:max-w-xl",
               activeIndex !== 2 &&
                 (slide.safeSide === "left" ? "mr-auto text-left" : "ml-auto text-left"),
             )}
