@@ -57,6 +57,10 @@ export default function RootLayout({
           <Footer />
         </div>
         {process.env.NODE_ENV === 'production' && <Analytics />}
+        <script
+          async
+          src={`https://admin.globle-trade.com/api/public/analytics.js?tenantId=${encodeURIComponent(process.env.NEXT_PUBLIC_TENANT_ID || "4787a180-bcff-4ca7-a2e3-e67c20719b09")}`}
+        />
       </body>
     </html>
   )
